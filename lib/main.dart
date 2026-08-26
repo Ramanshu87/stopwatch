@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/inputtext/inputtextcontrol.dart';
+import 'package:flutter_application/stopwatch/login.dart';
 import 'package:flutter_application/stopwatch/stopwatch.dart';
 
 void main() {
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const StopWatchExample(),
+      home: const ControlInput(),
       debugShowCheckedModeBanner: false,
     );
   }

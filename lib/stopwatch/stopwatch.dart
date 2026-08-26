@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 class StopWatchExample extends StatefulWidget {
-  const StopWatchExample({super.key});
+  final String name;
+  final String email;
+  const StopWatchExample({super.key, required this.name, required this.email});
 
   @override
   State<StopWatchExample> createState() => _StopWatchExampleState();
@@ -12,6 +14,7 @@ class StopWatchExample extends StatefulWidget {
 
 class _StopWatchExampleState extends State<StopWatchExample> {
   // int seconds = 0;
+
   bool isRunning = false;
   final laps = <int>[];
   int miliseconds = 0;
@@ -99,7 +102,7 @@ class _StopWatchExampleState extends State<StopWatchExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Stopwatch Example')),
+      appBar: AppBar(title: Text(widget.name)),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
