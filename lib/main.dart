@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/controls/inputtextcontrol.dart';
+import 'package:flutter_application/controls/sliderexample.dart';
 import 'package:flutter_application/stopwatch/login.dart';
 import 'package:flutter_application/stopwatch/stopwatch.dart';
+import 'package:flutter_application/controls/aclenderexample.dart';
 import 'controls/radiobutton.dart';
 import 'controls/chkbox.dart';
 
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const ChkBoxExam(),
+      home: const aclenderexample(),
       debugShowCheckedModeBanner: false,
     );
   }
