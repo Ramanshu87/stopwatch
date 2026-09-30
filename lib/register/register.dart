@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/resources/imagestrings.dart';
 
 void main() {
   runApp(MaterialApp(debugShowCheckedModeBanner: false, home: Registration()));
@@ -238,7 +239,7 @@ class EventTabs extends StatelessWidget {
             // TAB 2
             eventDetails(
               "Coding Challenge",
-              "Solve programming problems and complete "
+              "Solve programming problems and compete "
                   "with other participants.",
             ),
 
@@ -259,7 +260,7 @@ class EventTabs extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.computer, size: 60),
+          Image(image: AssetImage(i1)),
           SizedBox(height: 10),
           Text(
             name,
